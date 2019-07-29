@@ -1,0 +1,112 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+.eas-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.absolute-full-fill {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+}
+.input-group {
+  display:flex;
+  justify-content: flex-start;
+  white-space:nowrap;
+  font-size:14px;
+  line-height:56px;
+  padding:0 20px;
+}
+
+ /* element-ui-begin
+-------------------------- */
+  /* card
+-------------------------- */
+.el-card {
+  border-radius: 0px;
+  border: none;
+}
+.box-card {
+  padding: 6px;
+  width: $containerLeftWidth - 14px;
+  margin-bottom: 10px;
+}
+.el-card__header {
+  padding: 10px;
+}
+  /* collapse
+-------------------------- */
+.el-collapse-item__content {
+  padding: 10px 0 10px 0;
+}
+  /* color-picker
+-------------------------- */
+.el-color-picker__icon.el-icon-caret-bottom::before{
+  content:"";
+}
+.el-color-picker__trigger{
+  padding:3px;
+  height: auto;
+}
+.el-color-picker__icon{
+  margin-left: 0;
+  width: 0px
+}
+  /* nav-menu
+
+.el-menu--horizontal  {
+  border-bottom: none;
+  .el-menu-item {
+    height: 40px;
+    line-height: 40px;
+  }
+}
+-------------------------- */
+  /* table
+-------------------------- */
+// //此类名导致弹窗表格的样式被污染
+// .el-table {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+// }
+// //此与表格生成滚动条有关,但是用在全局，又导致弹窗表格的内容显示不出来
+// .el-table__body-wrapper {
+//   position: absolute;
+//   left: 0px;
+//   top: 36px;
+//   right: 0px;
+//   bottom: 0px;
+// }
+// .el-table__column-filter-trigger {
+//   line-height: 20px;
+// }
+ /* element-ui-end
+-------------------------- */
+//自定义全局样式
+.heightFullParent{
+  height: 100%;
+}
+.widthFullParent{
+  width: 100%;
+}
+//样式隐藏与显示
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
